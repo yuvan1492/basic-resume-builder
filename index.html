@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/cv.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <title>Resume builder</title>
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.1/html2pdf.bundle.min.js" 
+        integrity=
+"sha512vDKWohFHe2vkVWXHp3tKvIxxXg0pJxeid5eo+UjdjME3DBFBn2F8yWOE0XmiFcFbXxrEOR1JriWEno5Ckpn15A==" 
+        crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <header class="contain1">
+        <header>
+            <img class="icon" src="./images/cv.png">
+        </header>
+        <img src="./images/logo.png" class="icon1">
+        <nav>
+            <li class="dropdown">
+                    <a class="btt"><img src="./images/profile.png" class="icon"></a>
+                    <div class="dropdown-content">
+                        <a href="#">Profile</a>
+                        <a href="#">Login</a>
+                    </div>
+            </li>
+        </nav>
+    </header>
+    <div class="content">
+        <h3> Online Resume Builder</h3>
+        <h2>
+            Less than 3% of the resume makes 
+        </h2>
+        <h2>
+            upto first round. Be in top 3%.
+        </h2>
+
+        <p class="para">
+            Creating an effective front page for your resume is crucial as it's the first thing potential employers or recruiters will see. Here's an example of content you can include on the front page of your resume. To create a resume that stands out and secures a spot in the top 2%, it must be a finely crafted document that combines precision and impact. Your resume should be a tailored narrative of your professional journey, designed to catch the eye of both Applicant Tracking Systems (ATS) and human recruiters.
+        </p>
+        <button class="btn">Create Now <img src="./images/down.png" width="40px"></button>
+
+    </div>
+    <form class="inputs" id="form-print">
+        <section class="aboutcon">
+            <div class="secname">
+                <h>ABOUT SECTION</h>        
+            </div>
+            <div class="bblock">
+                <div class="ablock">
+                    <label>FirstName</label>
+                    <input type="text" placeholder="FirstName">
+                </div>
+                <div class="ablock">
+                    <label>LastName</label>
+                    <input type="text" placeholder="LastName">
+                </div>
+                <div class="ablock">
+                    <label>Your Photo</label>
+                    <input type="file" accept="image/*" id="imginp">
+                    <img id="imm" src="#" alt="" width="60px">
+                </div>
+                
+                <div class="ablock">
+                    <label>Designation</label>
+                    <input type="text" placeholder="eg. Accountant">
+                </div>
+                <div class="ablock">
+                    <label>Address</label>
+                    <input type="text" placeholder="eg. Wall St.23">
+                </div>
+                <div class="ablock">
+                    <label>E-mail</label>
+                    <input type="text" placeholder="E-mail">
+                </div>
+                <div class="ablock">
+                    <label>Phone No:</label>
+                    <input type="text" placeholder="9875-566654">
+                </div>
+                <div class="ablock">
+                    <label>Summary</label>
+                    <input type="text">
+                </div>
+            </div>
+        </section>
+        <section class="aboutcon ach">
+            <div class="secname">
+                <h>ACHIEVEMENTS</h>        
+            </div>
+            <div class="bblock">
+                <div class="ablock">
+                    <label>Title</label>
+                    <input type="text" >
+                </div>
+                <div class="ablock">
+                    <label>Description</label>
+                    <input type="text">
+                </div>
+            </div>
+        </section>
+        <section class="aboutcon">
+            <div class="secname">
+                <h>EXPERIENCE</h>        
+            </div>
+            <div class="bblock">
+                <div class="ablock">
+                    <label>Title</label>
+                    <input type="text">
+                </div>
+                <div class="ablock">
+                    <label>Company / Organization</label>
+                    <input type="text">
+                </div>
+                <div class="ablock">
+                    <label>Location</label>
+                    <input type="text">
+                </div>
+                <div class="ablock">
+                    <label>Start Date</label>
+                    <input type="date" placeholder="dd-mm-yyyy">
+                </div>
+                <div class="ablock">
+                    <label>End Date</label>
+                    <input type="date" placeholder="dd-mm-yyyy">
+                </div>
+                <div class="ablock">
+                    <label>Description</label>
+                    <input type="text">
+                </div>
+            </div>
+        </section>
+        <section class="aboutcon">
+            <div class="secname">
+                <h>EDUCATION</h>        
+            </div>
+            <div class="bblock">
+                <div class="ablock">
+                    <label>School</label>
+                    <input type="text">
+                </div>
+                <div class="ablock">
+                    <label>Degree</label>
+                    <input type="text">
+                </div>
+                <div class="ablock">
+                    <label>City</label>
+                    <input type="text">
+                </div>
+                <div class="ablock">
+                    <label>Start Date</label>
+                    <input type="date" placeholder="dd-mm-yyyy">
+                </div>
+                <div class="ablock">
+                    <label>End Date</label>
+                    <input type="date" placeholder="dd-mm-yyyy">
+                </div>
+                <div class="ablock">
+                    <label>Description</label>
+                    <input type="text">
+                </div>
+            </div>
+        </section>
+        <section class="aboutcon">
+            <div class="secname">
+                <h>PROJECTS</h>        
+            </div>
+            <div class="bblock">
+                <div class="ablock">
+                    <label>Project Title</label>
+                    <input type="text" >
+                </div>
+                <div class="ablock">
+                    <label>Project link</label>
+                    <input type="text" >
+                </div>
+                <div class="ablock">
+                    <label>Description</label>
+                    <input type="text">
+                </div>
+            </div>
+        </section>
+        <section class="aboutcon ach">
+            <div class="secname">
+                <h>SKILLS</h>        
+            </div>
+            <div class="bblock">
+                <div class="ablock">
+                    <label>Skills</label>
+                    <input list="skills" name="skill" >
+                    <datalist id="skills">
+                        <option value="HTML5">
+                        <option value="CSS3">
+                        <option value="JavaScript">
+                        <option value="C/C++"> 
+                        <option value="Python">
+                    </datalist>
+                </div>
+            </div>
+        </section>
+        
+    </form>
+    <div class="generatebtn">
+        <input type="button" class="btn" onclick="GeneratePdf();" value="Generate Pdf">
+    </div>
+    <footer>
+        <div className="foot">
+            <a href="https://www.facebook.com/you1onee/">
+              <img src="images/image.png" alt="" class="icon"/>
+            </a>
+            <a href="https://instagram.com/you1oneee">
+              <img src="images/image21.png" alt="" class="icon"/>
+            </a>
+            <a href="https://www.linkedin.com/in/yuvanshankar-vijayakumar-a18971242/">
+              <img src="images/image2.png" alt="" class="icon"/>
+            </a>
+            <a href="https://github.com/yuvan1492">
+              <img src="images/image3.png" alt="" class="icon"/>
+            </a>
+        </div>
+        <div class="text">
+            <p> Made with ❤️ by YuvanShankar </p>
+            <p> © YuvanShankar 2023 | All Rights Reserved </p>
+        </div>
+    </footer>
+    
+</body>
+<script>
+// Function to GeneratePdf
+    function GeneratePdf() {
+        var element = document.getElementById('form-print');
+        html2pdf(element);
+    }
+    imginp.onchange = evt =>{
+        const [file] =imginp.files;
+        if(file){
+            imm.src = URL.createObjectURL(file);
+            imginp.type="hidden";
+            
+        }
+    
+    }
+</script>
+</html>
